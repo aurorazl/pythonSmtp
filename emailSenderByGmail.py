@@ -5,9 +5,12 @@ import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
 
-my_sender = 'czlong.kelvin@gmail.com'  # 发件人邮箱账号
-my_pass = "long0486"  # 发件人邮箱密码
-my_user = '869071540@qq.com'  # 收件人邮箱账号，我这边发送给自己
+
+from config import config
+
+my_sender = config["gmail"]["my_sender"]  # 发件人邮箱账号
+my_pass = config["gmail"]["my_pass"]  # 发件人邮箱密码
+my_user = config["gmail"]["my_user"]  # 收件人邮箱账号，我这边发送给自己
 
 
 def mail():
