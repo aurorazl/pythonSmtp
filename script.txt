@@ -1,0 +1,13 @@
+## Install pycocotools
+pip install cython --user
+pip install pycocotools --user
+
+
+## process only 100
+
+python coco2json.py -input /data/coco2017/annotations/instances_val2017.json -output /data/coco2017/annotations/wedward/coco_2017_individual_json_sample_100/ -img_prefix /data/coco2017/images/val2017/ -num_sample 100
+
+
+## process all validation set
+
+python coco2json.py -input /data/coco2017/annotations/instances_val2017.json -output /data/coco2017/annotations/wedward/coco_2017_individual_json_all/ -img_prefix /data/coco2017/images/val2017/ -num_sample 0
