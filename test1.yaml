@@ -1,0 +1,730 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-04-23T08:59:36Z"
+  labels:
+    gpu-request: "1"
+    gpuType: nvidia
+    jobId: 4387fa8d-a1f5-44af-9967-d8365f741299
+    jobRole: worker
+    podName: 4387fa8d-a1f5-44af-9967-d8365f741299
+    preemptionAllowed: "False"
+    run: 4387fa8d-a1f5-44af-9967-d8365f741299
+    type: job
+    userName: zenglong.chen
+    vcName: platform
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:gpu-request: {}
+          f:gpuType: {}
+          f:jobId: {}
+          f:jobRole: {}
+          f:podName: {}
+          f:preemptionAllowed: {}
+          f:run: {}
+          f:type: {}
+          f:userName: {}
+          f:vcName: {}
+      f:spec:
+        f:affinity:
+          .: {}
+          f:podAffinity:
+            .: {}
+            f:preferredDuringSchedulingIgnoredDuringExecution: {}
+          f:podAntiAffinity:
+            .: {}
+            f:preferredDuringSchedulingIgnoredDuringExecution: {}
+        f:containers:
+          k:{"name":"4387fa8d-a1f5-44af-9967-d8365f741299"}:
+            .: {}
+            f:command: {}
+            f:env:
+              .: {}
+              k:{"name":"DLTS_JOB_TOKEN"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_GID"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_GPU_TYPE"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_JOB_ID"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_LAUNCH_CMD"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_NUM_GPU_PER_WORKER"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_NUM_PS"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_NUM_WORKER"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_REST_API"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_ROLE_NAME"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_UID"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_USER_EMAIL"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_USER_NAME"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_VC_NAME"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"FAMILY_TOKEN"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"IDENTITY_TOKEN"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"PASSWORD"}:
+                .: {}
+                f:name: {}
+              k:{"name":"POD_IP"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+              k:{"name":"POD_NAME"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:readinessProbe:
+              .: {}
+              f:exec:
+                .: {}
+                f:command: {}
+              f:failureThreshold: {}
+              f:initialDelaySeconds: {}
+              f:periodSeconds: {}
+              f:successThreshold: {}
+              f:timeoutSeconds: {}
+            f:resources:
+              .: {}
+              f:limits:
+                .: {}
+                f:nvidia.com/gpu: {}
+              f:requests:
+                .: {}
+                f:cpu: {}
+                f:nvidia.com/gpu: {}
+            f:securityContext:
+              .: {}
+              f:capabilities:
+                .: {}
+                f:add: {}
+              f:runAsUser: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+            f:volumeMounts:
+              .: {}
+              k:{"mountPath":"/data"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/dev/shm"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/dlts-runtime"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/home/zenglong.chen"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/home/zenglong.chen/.ssh"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/home/zenglong.chen/.ssh/authorized_keys"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+                f:readOnly: {}
+              k:{"mountPath":"/home/zenglong.chen/.ssh/id_rsa"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+                f:readOnly: {}
+              k:{"mountPath":"/home/zenglong.chen/.ssh/id_rsa.pub"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+                f:readOnly: {}
+              k:{"mountPath":"/job"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/pod"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+              k:{"mountPath":"/pod/scripts"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+                f:readOnly: {}
+              k:{"mountPath":"/work"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:imagePullSecrets:
+          .: {}
+          k:{"name":"regcred"}:
+            .: {}
+            f:name: {}
+        f:initContainers:
+          .: {}
+          k:{"name":"init"}:
+            .: {}
+            f:command: {}
+            f:env:
+              .: {}
+              k:{"name":"DLWS_JOB_ID"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_NUM_PS"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"DLWS_NUM_WORKER"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"LOGGING_LEVEL"}:
+                .: {}
+                f:name: {}
+                f:value: {}
+              k:{"name":"POD_IP"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+              k:{"name":"POD_NAME"}:
+                .: {}
+                f:name: {}
+                f:valueFrom:
+                  .: {}
+                  f:fieldRef:
+                    .: {}
+                    f:apiVersion: {}
+                    f:fieldPath: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+            f:volumeMounts:
+              .: {}
+              k:{"mountPath":"/dlts-runtime"}:
+                .: {}
+                f:mountPath: {}
+                f:name: {}
+        f:nodeSelector:
+          .: {}
+          f:FragmentGPUJob: {}
+          f:gpuType: {}
+          f:worker: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:serviceAccount: {}
+        f:serviceAccountName: {}
+        f:terminationGracePeriodSeconds: {}
+        f:volumes:
+          .: {}
+          k:{"name":"authorized-keys-volume"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"data"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"dlts-runtime"}:
+            .: {}
+            f:emptyDir: {}
+            f:name: {}
+          k:{"name":"dlws-scripts"}:
+            .: {}
+            f:configMap:
+              .: {}
+              f:defaultMode: {}
+              f:name: {}
+            f:name: {}
+          k:{"name":"dshm"}:
+            .: {}
+            f:emptyDir:
+              .: {}
+              f:medium: {}
+            f:name: {}
+          k:{"name":"home"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"id-rsa-pub-volume"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"id-rsa-volume"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"job"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"pod"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"resolv"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+          k:{"name":"ssh-volume"}:
+            .: {}
+            f:emptyDir: {}
+            f:name: {}
+          k:{"name":"work"}:
+            .: {}
+            f:hostPath:
+              .: {}
+              f:path: {}
+              f:type: {}
+            f:name: {}
+    manager: Swagger-Codegen
+    operation: Update
+    time: "2020-04-23T08:59:36Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:message: {}
+            f:reason: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:initContainerStatuses: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"10.44.0.2"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    time: "2020-04-23T08:59:51Z"
+  name: 4387fa8d-a1f5-44af-9967-d8365f741299
+  namespace: default
+  resourceVersion: "2264831"
+  selfLink: /api/v1/namespaces/default/pods/4387fa8d-a1f5-44af-9967-d8365f741299
+  uid: 06f72d27-6147-430a-9951-d61b3b0f4a3c
+spec:
+  affinity:
+    podAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: type
+              operator: In
+              values:
+              - job
+          topologyKey: kubernetes.io/hostname
+        weight: 50
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: jobId
+              operator: In
+              values:
+              - 4387fa8d-a1f5-44af-9967-d8365f741299
+          topologyKey: failure-domain.beta.kubernetes.io/region
+        weight: 100
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: jobId
+              operator: In
+              values:
+              - 4387fa8d-a1f5-44af-9967-d8365f741299
+          topologyKey: failure-domain.beta.kubernetes.io/zone
+        weight: 50
+  containers:
+  - command:
+    - bash
+    - /pod/scripts/bootstrap.sh
+    env:
+    - name: FAMILY_TOKEN
+      value: 0150256a-7cff-4795-b253-a173f52d629b
+    - name: DLWS_REST_API
+      value: None
+    - name: DLWS_JOB_ID
+      value: 4387fa8d-a1f5-44af-9967-d8365f741299
+    - name: DLWS_NUM_PS
+      value: "0"
+    - name: DLWS_NUM_WORKER
+      value: "1"
+    - name: DLWS_GPU_TYPE
+      value: nvidia
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    - name: DLWS_GID
+      value: "3001"
+    - name: DLWS_UID
+      value: "30004"
+    - name: PASSWORD
+    - name: DLWS_USER_NAME
+      value: zenglong.chen
+    - name: DLWS_USER_EMAIL
+      value: zenglong.chen
+    - name: DLWS_VC_NAME
+      value: platform
+    - name: DLTS_JOB_TOKEN
+      value: tryme2017
+    - name: IDENTITY_TOKEN
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Inplbmdsb25nLmNoZW4iLCJvcGVuSWQiOiJ6ZW5nbG9uZy5jaGVuQGFwdWxpcy5jb20iLCJwYXNzd29yZCI6IjEyMzQ1NiIsImZhbWlseU5hbWUiOiIiLCJncm91cCI6Ik1pY3Jvc29mdCIsImF1ZCAiOiJjaGluYS1ncHUwMi5zaWdzdXMuY24iLCJpc3MiOiJjaGluYS1ncHUwMi5zaWdzdXMuY24iLCJpc0F1dGhvcml6ZWQiOjEsImlzQWRtaW4iOjEsImdpZCI6MzAwMDQsImV4cCI6MTU4NzcxODc3Ni43NTMyMDMsImNsYWltcyI6eyJ1c2VyTmFtZSI6Inplbmdsb25nLmNoZW4iLCJ1c2VySWQiOjMwMDA0fSwiaWF0IjoxNTg3NjMyMzc2Ljc1MzIwMiwiZ2l2ZW5OYW1lIjoiIiwibmlja05hbWUiOiJaZW5nbG9uZyBDaGVuIChcdTk2NDhcdTU4OWVcdTlmOTkpIiwibmJmIjoxNTg3NjMyMzc1Ljc1MzIwNCwiaWRlbnRpdHkiOnsidXNlck5hbWUiOiJ6ZW5nbG9uZy5jaGVuIiwidXNlcklkIjozMDAwNH0sInVpZCI6MzAwMDR9.XcdB0xGUC65bpkiknKqjXAEgFjICcv_uDWtmTMl0Tvk
+    - name: DLWS_ROLE_NAME
+      value: master
+    - name: DLWS_NUM_GPU_PER_WORKER
+      value: "1"
+    - name: DLWS_LAUNCH_CMD
+      value: sleep 2d
+    image: ubuntu:18.04
+    imagePullPolicy: Always
+    name: 4387fa8d-a1f5-44af-9967-d8365f741299
+    readinessProbe:
+      exec:
+        command:
+        - ls
+        - /pod/running/ROLE_READY
+      failureThreshold: 3
+      initialDelaySeconds: 3
+      periodSeconds: 30
+      successThreshold: 1
+      timeoutSeconds: 1
+    resources:
+      limits:
+        nvidia.com/gpu: "1"
+      requests:
+        cpu: "1"
+        nvidia.com/gpu: "1"
+    securityContext:
+      capabilities:
+        add:
+        - IPC_LOCK
+        - SYS_ADMIN
+      runAsUser: 0
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /dlts-runtime
+      name: dlts-runtime
+    - mountPath: /pod/scripts
+      name: dlws-scripts
+      readOnly: true
+    - mountPath: /home/zenglong.chen/.ssh
+      name: ssh-volume
+    - mountPath: /home/zenglong.chen/.ssh/id_rsa
+      name: id-rsa-volume
+      readOnly: true
+    - mountPath: /home/zenglong.chen/.ssh/id_rsa.pub
+      name: id-rsa-pub-volume
+      readOnly: true
+    - mountPath: /home/zenglong.chen/.ssh/authorized_keys
+      name: authorized-keys-volume
+      readOnly: true
+    - mountPath: /job
+      name: job
+    - mountPath: /home/zenglong.chen
+      name: home
+    - mountPath: /work
+      name: work
+    - mountPath: /data
+      name: data
+    - mountPath: /pod
+      name: pod
+    - mountPath: /dev/shm
+      name: dshm
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: job-token-nnk6x
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  imagePullSecrets:
+  - name: regcred
+  initContainers:
+  - command:
+    - sh
+    - /dlts-init/init.sh
+    env:
+    - name: LOGGING_LEVEL
+      value: DEBUG
+    - name: DLWS_JOB_ID
+      value: 4387fa8d-a1f5-44af-9967-d8365f741299
+    - name: DLWS_NUM_PS
+      value: "0"
+    - name: DLWS_NUM_WORKER
+      value: "1"
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    - name: POD_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    image: apulistech/china-gpu02_init-container:latest
+    imagePullPolicy: Always
+    name: init
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /dlts-runtime
+      name: dlts-runtime
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: job-token-nnk6x
+      readOnly: true
+  nodeName: china-gpu02-worker2
+  nodeSelector:
+    FragmentGPUJob: active
+    gpuType: nvidia
+    worker: active
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: job
+  serviceAccountName: job
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - configMap:
+      defaultMode: 420
+      name: dlws-scripts
+    name: dlws-scripts
+  - emptyDir: {}
+    name: ssh-volume
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen/.ssh/id_rsa
+      type: ""
+    name: id-rsa-volume
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen/.ssh/id_rsa.pub
+      type: ""
+    name: id-rsa-pub-volume
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen/.ssh/authorized_keys
+      type: ""
+    name: authorized-keys-volume
+  - emptyDir: {}
+    name: dlts-runtime
+  - hostPath:
+      path: /etc/resolv.conf
+      type: ""
+    name: resolv
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen
+      type: ""
+    name: job
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen
+      type: ""
+    name: home
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen
+      type: ""
+    name: work
+  - hostPath:
+      path: /dlwsdata/storage/
+      type: ""
+    name: data
+  - hostPath:
+      path: /dlwsdata/work/zenglong.chen/master
+      type: ""
+    name: pod
+  - emptyDir:
+      medium: Memory
+    name: dshm
+  - name: job-token-nnk6x
+    secret:
+      defaultMode: 420
+      secretName: job-token-nnk6x
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-23T08:59:44Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-23T08:59:37Z"
+    message: 'containers with unready status: [4387fa8d-a1f5-44af-9967-d8365f741299]'
+    reason: ContainersNotReady
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-23T08:59:37Z"
+    message: 'containers with unready status: [4387fa8d-a1f5-44af-9967-d8365f741299]'
+    reason: ContainersNotReady
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-04-23T08:59:36Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://a2e52136f450b7b3f7c193b675139880e3ee8845ba49700344bc7afbb05cddd9
+    image: ubuntu:18.04
+    imageID: docker-pullable://ubuntu@sha256:bec5a2727be7fff3d308193cfde3491f8fba1a2ba392b7546b43a051853a341d
+    lastState: {}
+    name: 4387fa8d-a1f5-44af-9967-d8365f741299
+    ready: false
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-04-23T08:59:50Z"
+  hostIP: 192.168.1.9
+  initContainerStatuses:
+  - containerID: docker://fb96c0aeb7ebea5007cb373ce7acda4ced8f94aebe7f430ea48911bb173e41c6
+    image: apulistech/china-gpu02_init-container:latest
+    imageID: docker-pullable://apulistech/china-gpu02_init-container@sha256:d43ca4944162d33b2cefb8ae5d64cca8be76e4c9c059cbf11270756c8c47d61f
+    lastState: {}
+    name: init
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: docker://fb96c0aeb7ebea5007cb373ce7acda4ced8f94aebe7f430ea48911bb173e41c6
+        exitCode: 0
+        finishedAt: "2020-04-23T08:59:43Z"
+        reason: Completed
+        startedAt: "2020-04-23T08:59:43Z"
+  phase: Running
+  podIP: 10.44.0.2
+  podIPs:
+  - ip: 10.44.0.2
+  qosClass: Burstable
+  startTime: "2020-04-23T08:59:37Z"

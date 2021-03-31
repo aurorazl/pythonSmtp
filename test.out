@@ -1,0 +1,15 @@
+inference:
+  
+  tensorflow:
+    
+    - version: 12
+      image: 111 
+    
+    - version: 12
+      image: 
+    
+  
+  pytorch:
+    
+  
+
