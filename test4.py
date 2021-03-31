@@ -2,14 +2,12 @@ import re
 import requests
 
 
-
-
-res = requests.post("https://login.microsoftonline.com/common/oauth2/token",
+res = requests.post("https://login.microsoftonline.com/common/oauth2/v2.0/token",
                   data={"client_id":"6d93837b-d8ce-48b9-868a-39a9d843dc57",
                         "client_secret":"eIHVKiG2TlYa387tssMSj?E?qVGvJi[]",
-                        "code":"OAQABAAIAAACQN9QBRU3jT6bcBQLZNUj7CUzQFvQCQ_rjuz-ibC6HCprf11Wfz7URYdJWL-w9qSFNMk44Gj8XtbE-1E_Sdownr5iWuXmwa6ZWCODEt50klUV-8HXtL8SGtzFi-j345nmjpl2PyK4J-yJnAA4_R6ua8kiu4mholxH-6VrNbdd6kUVRIk_inxWtlgDO3oZPcsvqmITM6soiIcmXe8tXG67C1NtmmVNJli9WRvO-OhlTZBq9XDLd2RyAj5yFpwGWRB_gxEr2tK133JvY4cq9EdId__40QY1CLh5WP5_Zu3x8fZ6Hndu_DTNzC711LIQMuqPrS5AVjpHl0OSZb3bKPuG5IUC9PK39MKuy8xyI4Mh75_oCjKQX57Ink13rdO1uSPGqxRAkmZ4MOR_39_Twbc8NrxDwZJIPpN-aWs1UBSIc-lMNy4GLwTpHzoHccttUidj1sHme4Nmr7AvV4khqQemSC-wTdAlR8MAFRDsEkCWhX861wbNRKIZONq99bynXZb9rMEEDEzjZLedRziFZcY6IRDbH9zC2EXhJB9FX_3nPjwwJ3lQR54SAk2z9BB9XarvQBl38ngUV-ImhT5rkhmX8dkD4wxK28fGJddlk13hmdW5KBcLO6szwO0T7I0uysBlxiWs6lqLJFX-QGUR5CF6DIAA",
+                        "code":"OAQABAAIAAAAm-06blBE1TpVMil8KPQ41T9KaPgikd7qk32b1f0yDxI4LCnL88Aq74Am5b-cmgSG0ZYrYSokkFq02PoJ_WWDXdi5SeK0awgq9stgykrFFz2xwPa-ri7UO8IKg1gxCq_5YB6-EWmE1HLEXv1199pS_Y1fRYm4H47w4-mdEMYW7tlmssQNurgPD4R-cPU5HkdK7T6ZPLh-QXtx4HSmQScvWdwD25rcXpmKlKv8taRbRGcby9tW-rh4nb1pRWEU_aYufhfOWOBMGw6kUXxfx3lz5odgme44X-9BZQSJ68SBxnQy8C6uZJNbT-Q7RHGR1l2pjNENyjyPJi7yWz2eY9ldoARz9CTDu0kmtAjaldSe8C1aFgSPorugY3Win9A_aYKooIaaaoz0mElgt--Jm5OmTXUyoqxcPibbZZrQaC_Q7aXVIZwQ1nG_KqQFItvJFq1CX2SXt6G-ko_wn7o5n-ffpt2arwz7l1_OP0trp10AEi9p19YpO84Qx0L8D4ySRAzKoUNBJ5zzfSnU-Zfcz6cDZZSokq0byfopTdBzegtIYy6ha8E_40MKZZAdn9ihnFz05ytAerQ2i4lxPGGLQmnli8w2qTDoYAyV4yIvWLFNPutwBXf9jatLgnkwvo7rMkNRmSPAPdkl0ALXqZhf4cCcr7uID8SjTiPah3bpQkN0BgSAA",
                         "grant_type":"authorization_code",
-                        "redirect_uri":"https://localhost:44326/api/login/microsoft",
+                        "redirect_uri":"https://apulis-sz-dev-worker01.sigsus.cn/api/login/microsoft",
                         },
                     headers={"Content-Typ":"application/x-www-form-urlencoded"})
 # res = requests.get(
@@ -20,3 +18,7 @@ print(res.status_code)
 print(res.text)
 import json
 print(json.loads(res.text))
+print("sigsus.cn".split(":")[0] if ":" in "sigsus.cn" else "sigsus.cn")
+print("." +   "23 "+        "sigsus.cn".split(":")[0] if ":" in "sigsus.cn" else "sigsus.cn")
+print("atlas02.sigsus.cn".split("."+"sigsus.cn".split(":")[0] if ":" in "sigsus.cn" else "sigsus.cn")[0])
+print(all((x==0 for x in [0,1])))
